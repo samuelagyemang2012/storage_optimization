@@ -1,0 +1,1562 @@
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.999362
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1412.9
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0429792
+Max latency(s):       0.199445
+Min latency(s):       0.00394105
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.71      1404   0.0391485    0.043578
+Total time run:       1.01265
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1394.36
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436522
+Max latency(s):       0.171092
+Min latency(s):       0.00428025
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.74      1404   0.0626449   0.0432509
+Total time run:       1.00545
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1404.34
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0433313
+Max latency(s):       0.16487
+Min latency(s):       0.00470487
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.994305
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1420.09
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0429723
+Max latency(s):       0.196382
+Min latency(s):       0.0036728
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0487869   0.0434027
+Total time run:       1.00714
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1401.99
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434615
+Max latency(s):       0.206583
+Min latency(s):       0.00323127
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.74      1404   0.0330377    0.043767
+Total time run:       1.01199
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1395.27
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0438471
+Max latency(s):       0.208966
+Min latency(s):       0.00345216
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.990206
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1425.97
+Average IOPS:         356
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.042692
+Max latency(s):       0.173172
+Min latency(s):       0.00318801
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.992492
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1422.68
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0428507
+Max latency(s):       0.207423
+Min latency(s):       0.00410987
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.74      1408    0.050413   0.0432539
+Total time run:       1.00395
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1406.44
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0432798
+Max latency(s):       0.174551
+Min latency(s):       0.00386226
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.994171
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1420.28
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.043343
+Max latency(s):       0.17035
+Min latency(s):       0.00410122
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.994171
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1420.28
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0426704
+Max latency(s):       0.184138
+Min latency(s):       0.004176
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.996494
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1416.97
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0430796
+Max latency(s):       0.199383
+Min latency(s):       0.00404074
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.39      1408   0.0375491   0.0436106
+Total time run:       1.0087
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1399.83
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0436668
+Max latency(s):       0.192325
+Min latency(s):       0.00428274
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.989102
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1427.56
+Average IOPS:         356
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427863
+Max latency(s):       0.188283
+Min latency(s):       0.00354879
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.73      1404   0.0371745   0.0433717
+Total time run:       1.01337
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1393.37
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0435265
+Max latency(s):       0.171435
+Min latency(s):       0.00407358
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       4       353       349   1395.72      1396   0.0433629   0.0440383
+Total time run:       1.02049
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1383.64
+Average IOPS:         345
+Stddev IOPS:          0
+Max IOPS:             349
+Min IOPS:             349
+Average Latency(s):   0.0440786
+Max latency(s):       0.190276
+Min latency(s):       0.00315637
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.66      1400    0.038087   0.0437862
+Total time run:       1.01076
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1396.97
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0438266
+Max latency(s):       0.168155
+Min latency(s):       0.00416432
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.997643
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1415.34
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427989
+Max latency(s):       0.180946
+Min latency(s):       0.00429002
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.71      1408   0.0449647   0.0434277
+Total time run:       1.00806
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1400.71
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434718
+Max latency(s):       0.198005
+Min latency(s):       0.00391568
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.75      1404   0.0431518   0.0436231
+Total time run:       1.00925
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1399.06
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436831
+Max latency(s):       0.192497
+Min latency(s):       0.00415534
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.987879
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1429.32
+Average IOPS:         357
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427785
+Max latency(s):       0.175612
+Min latency(s):       0.00375181
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.69      1404   0.0461605   0.0436538
+Total time run:       1.01327
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1393.51
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0437271
+Max latency(s):       0.203143
+Min latency(s):       0.00387783
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.68      1408   0.0442339    0.043434
+Total time run:       1.00399
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1406.38
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434896
+Max latency(s):       0.168932
+Min latency(s):       0.00363047
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.69      1408   0.0450964   0.0434795
+Total time run:       1.00204
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1409.12
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434952
+Max latency(s):       0.2057
+Min latency(s):       0.00418157
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.986627
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1431.14
+Average IOPS:         357
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0423044
+Max latency(s):       0.202071
+Min latency(s):       0.00382855
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.75      1400   0.0423144   0.0439169
+Total time run:       1.01995
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1384.38
+Average IOPS:         346
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0440287
+Max latency(s):       0.220317
+Min latency(s):       0.00408323
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       4       353       349   1395.69      1396    0.029799   0.0439455
+Total time run:       1.01816
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1386.82
+Average IOPS:         346
+Stddev IOPS:          0
+Max IOPS:             349
+Min IOPS:             349
+Average Latency(s):   0.044024
+Max latency(s):       0.169511
+Min latency(s):       0.00424674
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.983274
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1436.02
+Average IOPS:         359
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0424169
+Max latency(s):       0.22606
+Min latency(s):       0.00350739
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       4       353       349   1395.71      1396    0.054572   0.0439691
+Total time run:       1.0306
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1370.08
+Average IOPS:         342
+Stddev IOPS:          0
+Max IOPS:             349
+Min IOPS:             349
+Average Latency(s):   0.0441155
+Max latency(s):       0.206414
+Min latency(s):       0.00354492
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.69      1404    0.047018   0.0434394
+Total time run:       1.00622
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1403.27
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0434997
+Max latency(s):       0.167853
+Min latency(s):       0.00402187
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       7       353       346   1383.74      1384   0.0668805   0.0445874
+Total time run:       1.03099
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1369.56
+Average IOPS:         342
+Stddev IOPS:          0
+Max IOPS:             346
+Min IOPS:             346
+Average Latency(s):   0.0446521
+Max latency(s):       0.1887
+Min latency(s):       0.00367356
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.988896
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1427.86
+Average IOPS:         356
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0426154
+Max latency(s):       0.190935
+Min latency(s):       0.00372952
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.77      1404   0.0327638    0.043927
+Total time run:       1.01305
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1393.81
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0439285
+Max latency(s):       0.193816
+Min latency(s):       0.00429996
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0447277   0.0435056
+Total time run:       1.008
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1400.8
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0435643
+Max latency(s):       0.209994
+Min latency(s):       0.00347613
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.988698
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1428.14
+Average IOPS:         357
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0428854
+Max latency(s):       0.168746
+Min latency(s):       0.00386034
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.74      1408    0.052427    0.043108
+Total time run:       1.00403
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1406.34
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431786
+Max latency(s):       0.19647
+Min latency(s):       0.00421331
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0400316   0.0432565
+Total time run:       1.00653
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1402.84
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0432918
+Max latency(s):       0.166287
+Min latency(s):       0.00437929
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.73      1400   0.0525253   0.0437987
+Total time run:       1.01745
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1387.79
+Average IOPS:         346
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0439091
+Max latency(s):       0.160922
+Min latency(s):       0.00458226
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.996557
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1416.88
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0428173
+Max latency(s):       0.193047
+Min latency(s):       0.00401604
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.71      1404   0.0455537   0.0435469
+Total time run:       1.01019
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1397.76
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0435837
+Max latency(s):       0.232656
+Min latency(s):       0.00441205
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.74      1408   0.0416914   0.0432865
+Total time run:       1.00246
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1408.54
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0433247
+Max latency(s):       0.193064
+Min latency(s):       0.00401326
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.989323
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1427.24
+Average IOPS:         356
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0429437
+Max latency(s):       0.204401
+Min latency(s):       0.00422773
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.58      1408   0.0554781   0.0432262
+Total time run:       1.00794
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1400.87
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0432667
+Max latency(s):       0.219749
+Min latency(s):       0.00340247
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.73      1408    0.031301   0.0437136
+Total time run:       1.00591
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1403.71
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0437165
+Max latency(s):       0.177407
+Min latency(s):       0.00377566
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351    1403.7      1404   0.0380469   0.0436463
+Total time run:       1.01021
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1397.73
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436983
+Max latency(s):       0.227436
+Min latency(s):       0.00412083
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0488473   0.0430437
+Total time run:       1.00462
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1405.5
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431073
+Max latency(s):       0.19329
+Min latency(s):       0.00378166
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.74      1400   0.0406952   0.0437463
+Total time run:       1.01767
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1387.48
+Average IOPS:         346
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0438296
+Max latency(s):       0.229792
+Min latency(s):       0.00380074
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.986221
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1431.73
+Average IOPS:         357
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0430243
+Max latency(s):       0.203373
+Min latency(s):       0.0034515
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.71      1404   0.0493761   0.0435832
+Total time run:       1.01144
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1396.03
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436467
+Max latency(s):       0.195444
+Min latency(s):       0.00378864
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.74      1408   0.0544655   0.0431418
+Total time run:       1.00513
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1404.8
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431803
+Max latency(s):       0.19442
+Min latency(s):       0.00381532
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.71      1404   0.0301347   0.0436938
+Total time run:       1.00986
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1398.21
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0437074
+Max latency(s):       0.225778
+Min latency(s):       0.00445403
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.999963
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1412.05
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.043338
+Max latency(s):       0.164357
+Min latency(s):       0.00426038
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.991023
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1424.79
+Average IOPS:         356
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0426913
+Max latency(s):       0.20672
+Min latency(s):       0.0038495
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.76      1400   0.0442862   0.0437062
+Total time run:       1.01775
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1387.38
+Average IOPS:         346
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0437857
+Max latency(s):       0.183617
+Min latency(s):       0.00472463
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352    1407.7      1408   0.0443406   0.0434463
+Total time run:       1.00522
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1404.67
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434938
+Max latency(s):       0.237722
+Min latency(s):       0.004002
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.71      1404    0.048451   0.0435072
+Total time run:       1.01269
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1394.3
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0435748
+Max latency(s):       0.192285
+Min latency(s):       0.00451228
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.993924
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1420.63
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0428033
+Max latency(s):       0.196942
+Min latency(s):       0.00365132
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.73      1400   0.0407541   0.0438694
+Total time run:       1.02218
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1381.36
+Average IOPS:         345
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0440334
+Max latency(s):       0.190426
+Min latency(s):       0.00417497
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       1.00065
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1411.08
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434804
+Max latency(s):       0.196247
+Min latency(s):       0.00341643
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.996478
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1416.99
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427849
+Max latency(s):       0.202762
+Min latency(s):       0.00383118
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.73      1404   0.0493945   0.0435645
+Total time run:       1.01487
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1391.3
+Average IOPS:         347
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436595
+Max latency(s):       0.18451
+Min latency(s):       0.00338798
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.995383
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1418.55
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0433005
+Max latency(s):       0.198988
+Min latency(s):       0.00357504
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.79      1408   0.0498508   0.0431039
+Total time run:       1.00099
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1410.6
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431738
+Max latency(s):       0.166827
+Min latency(s):       0.00375337
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352    1407.8      1408   0.0448993   0.0430985
+Total time run:       1.00088
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1410.76
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431387
+Max latency(s):       0.207894
+Min latency(s):       0.00373674
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.71      1404   0.0463849   0.0436061
+Total time run:       1.01164
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1395.75
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436438
+Max latency(s):       0.193314
+Min latency(s):       0.00432814
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.987071
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1430.49
+Average IOPS:         357
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427691
+Max latency(s):       0.191129
+Min latency(s):       0.00377784
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.996908
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1416.38
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0429975
+Max latency(s):       0.19225
+Min latency(s):       0.00422825
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0478459   0.0432575
+Total time run:       1.00517
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1404.74
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0432712
+Max latency(s):       0.205253
+Min latency(s):       0.00425604
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.75      1408    0.051257    0.043579
+Total time run:       1.00405
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1406.31
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0436028
+Max latency(s):       0.211048
+Min latency(s):       0.00400488
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.999644
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1412.5
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0429405
+Max latency(s):       0.165355
+Min latency(s):       0.00384369
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0416943   0.0434001
+Total time run:       1.00688
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1402.35
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434347
+Max latency(s):       0.161781
+Min latency(s):       0.00396395
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.71      1408   0.0490207   0.0434295
+Total time run:       1.00643
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1402.98
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434524
+Max latency(s):       0.172389
+Min latency(s):       0.00421776
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.983944
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1435.04
+Average IOPS:         358
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0426779
+Max latency(s):       0.227022
+Min latency(s):       0.00437775
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.99441
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1419.94
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427538
+Max latency(s):       0.181918
+Min latency(s):       0.00393337
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.998115
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1414.67
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431346
+Max latency(s):       0.193933
+Min latency(s):       0.0038591
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.76      1408   0.0472207     0.04362
+Total time run:       1.00559
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1404.15
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0436684
+Max latency(s):       0.20655
+Min latency(s):       0.00385176
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.76      1408   0.0453301   0.0434179
+Total time run:       1.00352
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1407.05
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434743
+Max latency(s):       0.169391
+Min latency(s):       0.00350075
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.75      1404   0.0417009   0.0436549
+Total time run:       1.00989
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1398.17
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436636
+Max latency(s):       0.240327
+Min latency(s):       0.00370769
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.72      1408   0.0644884   0.0434567
+Total time run:       1.00594
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1403.66
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.043515
+Max latency(s):       0.222691
+Min latency(s):       0.00384697
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.992891
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1422.11
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0429437
+Max latency(s):       0.165886
+Min latency(s):       0.00450842
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.71      1408   0.0529075   0.0430383
+Total time run:       1.00476
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1405.3
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431161
+Max latency(s):       0.186051
+Min latency(s):       0.00392514
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.73      1408   0.0375845   0.0434156
+Total time run:       1.00257
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1408.37
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434364
+Max latency(s):       0.190586
+Min latency(s):       0.00399082
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.74      1408   0.0475031    0.043434
+Total time run:       1.00509
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1404.85
+Average IOPS:         351
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434485
+Max latency(s):       0.207248
+Min latency(s):       0.0040747
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.98861
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1428.27
+Average IOPS:         357
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0427071
+Max latency(s):       0.186899
+Min latency(s):       0.00370708
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.73      1400   0.0449701   0.0436049
+Total time run:       1.01598
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1389.79
+Average IOPS:         347
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0436654
+Max latency(s):       0.147772
+Min latency(s):       0.00437724
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.995673
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1418.14
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0432336
+Max latency(s):       0.19442
+Min latency(s):       0.00386187
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.995817
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1417.93
+Average IOPS:         354
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0432349
+Max latency(s):       0.164209
+Min latency(s):       0.00428578
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.77      1400    0.053756   0.0436766
+Total time run:       1.02215
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1381.4
+Average IOPS:         345
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0438613
+Max latency(s):       0.184696
+Min latency(s):       0.00381352
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.73      1404   0.0449443   0.0438216
+Total time run:       1.01259
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1394.45
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0438422
+Max latency(s):       0.207322
+Min latency(s):       0.00415998
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1      10       353       343   1370.31      1372   0.0342017   0.0444994
+Total time run:       1.02409
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1378.79
+Average IOPS:         344
+Stddev IOPS:          0
+Max IOPS:             343
+Min IOPS:             343
+Average Latency(s):   0.0447758
+Max latency(s):       0.193505
+Min latency(s):       0.0042468
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.991281
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1424.42
+Average IOPS:         356
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0428253
+Max latency(s):       0.191889
+Min latency(s):       0.00362541
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       2       353       351   1403.73      1404   0.0429465    0.043636
+Total time run:       1.01249
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1394.58
+Average IOPS:         348
+Stddev IOPS:          0
+Max IOPS:             351
+Min IOPS:             351
+Average Latency(s):   0.0436946
+Max latency(s):       0.215608
+Min latency(s):       0.00364807
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352   1407.04      1408   0.0437395   0.0434089
+Total time run:       1.00922
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1399.1
+Average IOPS:         349
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0434558
+Max latency(s):       0.177923
+Min latency(s):       0.00370504
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.74      1400   0.0466327   0.0439145
+Total time run:       1.00847
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1400.14
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0439637
+Max latency(s):       0.166396
+Min latency(s):       0.00402319
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.999107
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1413.26
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431135
+Max latency(s):       0.16387
+Min latency(s):       0.00407531
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       1       353       352    1407.7      1408   0.0390012   0.0435224
+Total time run:       1.00598
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1403.6
+Average IOPS:         350
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0435467
+Max latency(s):       0.195203
+Min latency(s):       0.00414942
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       1.00024
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1411.66
+Average IOPS:         352
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431932
+Max latency(s):       0.203939
+Min latency(s):       0.00353217
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.997715
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1415.23
+Average IOPS:         353
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0431088
+Max latency(s):       0.204038
+Min latency(s):       0.00360252
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+    1       3       353       350   1399.74      1400   0.0381444   0.0436927
+Total time run:       1.0195
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1384.99
+Average IOPS:         346
+Stddev IOPS:          0
+Max IOPS:             350
+Min IOPS:             350
+Average Latency(s):   0.0438367
+Max latency(s):       0.202579
+Min latency(s):       0.00400174
+hints = 1
+  sec Cur ops   started  finished  avg MB/s  cur MB/s last lat(s)  avg lat(s)
+    0       0         0         0         0         0           -           0
+Total time run:       0.993116
+Total reads made:     353
+Read size:            4194304
+Object size:          4194304
+Bandwidth (MB/sec):   1421.79
+Average IOPS:         355
+Stddev IOPS:          0
+Max IOPS:             352
+Min IOPS:             352
+Average Latency(s):   0.0430951
+Max latency(s):       0.150267
+Min latency(s):       0.00374354
