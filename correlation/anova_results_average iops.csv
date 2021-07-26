@@ -1,0 +1,11 @@
+Feature,Score
+mds_debug_frag,1.641433749512926
+bluestore_default_buffered_read,1.5133385201099505
+mds_wipe_ino_prealloc,1.379170905942201
+rbd_cache,1.3163789309863687
+client_oc,1.2624841668818243
+mds_debug_scatterstat,1.2081160191591276
+rbd_cache_writethrough_until_flush,1.1935174863804339
+mds_dump_cache_on_map,1.1184940865616917
+bluestore_default_buffered_write,1.0812203057219585
+mds_debug_subtrees,1.0003117828482893

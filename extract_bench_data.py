@@ -2,13 +2,15 @@ import csv
 import pandas as pd
 
 """
-Reads parameter values and results generated from rados bench and saves it to a csv file
+Reads parameter values and bash_script_results generated from rados bench and saves it to a csv file
 """
-gen_path = "bench_results/gen.txt"
-res_path = "bench_results/rados_results.txt"
+gen_path = "rados_bench_results/gen.txt"
+res_path = "rados_bench_results/rados_results.txt"
 ceph_path = "ceph_parameters.csv"
 
 NUM_PARAMS = 128
+TARGET = "Average Latency(s)"  # "Average Latency(s)"  # Average IOPS
+OUTPUT = "rados_bench_results/params_" + TARGET.lower() + ".csv"
 
 gen = open(gen_path)
 res = open(res_path)
@@ -16,10 +18,10 @@ df = pd.read_csv(ceph_path)
 
 datatypes = df["DataType"].tolist()
 columns = df["Parameters"].tolist()
-columns.append("Average IOPS")
+columns.append(TARGET)
 
 params = []
-iops = []
+target = []
 
 
 def divide_chunks(l, n):
@@ -32,11 +34,14 @@ def divide_chunks(l, n):
 for line in gen:
     params.append(line)
 
-# Fetch iops from file
+# Fetch target from file
 for line in res:
-    if line[0:12] == "Average IOPS":
+    if line[0:len(TARGET)] == TARGET:
         line = line.split(":")
-        iops.append(int(line[1].strip()))
+        if TARGET == "Average IOPS":
+            target.append(int(line[1].strip()))
+        else:
+            target.append(float(line[1].strip()))
 
 # Split params into chunks of 128 bc we have 128 parameters
 params = list(divide_chunks(params, NUM_PARAMS))
@@ -59,11 +64,11 @@ for i in range(len(tunings)):
             tunings[i][j] = float(tunings[i][j])
 
 # Append IOPS to parameters tunings: Average IOPS is our target
-for i, ip in enumerate(iops):
+for i, ip in enumerate(target):
     tunings[i].append(ip)
 
 # Write data to a csv file
-with open("bench_results/params_iops.csv", 'w') as f:
+with open(OUTPUT, 'w') as f:
     write = csv.writer(f)
     write.writerow(columns)
     write.writerows(tunings)

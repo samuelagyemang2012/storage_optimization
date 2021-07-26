@@ -5,7 +5,7 @@ from get_params_list import generate_parameter_list
 Generate a bash file thats randomly generate parameters based data in the ceph_parameters.csv file, 
 creates a ceph.conf file and runs a rados bench test.
 
-:returns a txt named get_rados_data.txt
+:returns a txt named get_rados_data.sh
 """
 
 # Read file
@@ -72,8 +72,8 @@ script += 'echo "Rados bench-marking with params"' + "\n"
 script += 'rados bench -p paraTune 10 seq >> rados_results.txt' + "\n"
 script += 'echo "Done"' + "\n" + "\n"
 
-f = open("results/get_rados_data.txt", "w")
+f = open("bash_script_results/get_rados_data.sh", "w")
 f.write(script)
 
-generate_parameter_list(params)
+generate_parameter_list(params, "bash_script_results/params.txt")
 print("done")
