@@ -38,11 +38,14 @@ for i, p in enumerate(params):
 
     if datatypes[i] == 'bool':
         script += p + '=$[ $RANDOM % 2]' + "\n"
+        # script += p + "$(seq " + str(starts[i]) + " " + str(ends[i]) + " shuf -n 1)" + "\n"
         script += 'params[' + str(i) + ']=$' + p + "\n"
         script += "\n"
 
     if datatypes[i] == 'uint' or datatypes[i] == 'int' or datatypes[i] == 'size':
-        script += p + '=$[ $RANDOM % ' + str(int(starts[i])) + ' + ' + str(int(ends[i])) + ']' + "\n"
+        # script += p + "=$(seq " + str(starts[i]) + " " + str(ends[i]) + " | shuf -n 1)" + "\n"
+        script += p + '=$(( $RANDOM % (' + str(int(starts[i])) + ' + 1 - ' + str(int(ends[i])) + ') + ' + str(
+            int(starts[i]))+'))' + "\n"
         script += 'params[' + str(i) + ']=$' + p + "\n"
         script += "\n"
 """

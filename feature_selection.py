@@ -68,7 +68,7 @@ sns.set_style("darkgrid")
 plt.plot(target)
 plt.ylabel(target_)
 # plt.show()
-plt.savefig(target_.lower() + '.png')
+plt.savefig("graphs/"+target_.lower() + '.png')
 
 # Pearson Correlation test
 correlation_test(numerical_features, target, K, "pearson", "correlation/pearson_" + target_.lower() + ".png")

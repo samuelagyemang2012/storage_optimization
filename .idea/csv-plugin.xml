@@ -3,21 +3,7 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\bench_results\params_iops.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\ceph_parameters.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\correlation\anova_results.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -39,13 +25,6 @@
           </value>
         </entry>
         <entry key="\rados_bench_results\params_average latency(s).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\rados_bench_results\params_latency.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
