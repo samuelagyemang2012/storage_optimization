@@ -1,0 +1,10 @@
+features,Kendall Correllation
+Target,1.0
+mds_recall_max_caps,0.16737706253830675
+mds_dir_max_commit_size,0.16093826030360509
+osd_tier_default_cache_hit_set_count,0.1481125838935294
+mds_cache_reservation,0.14659742892523073
+mds_session_cache_liveness_magnitude,0.12368869870542935
+client_oc_max_dirty,0.1069703031259855
+mds_recall_warning_threshold,0.10213583388639108
+bluestore_fsck_read_bytes_cap,0.10045803784718958

@@ -1,0 +1,9 @@
+features
+client_oc_max_dirty
+osd_tier_default_cache_hit_set_count
+mds_dir_max_commit_size
+mds_recall_max_caps
+bluestore_fsck_read_bytes_cap
+mds_cache_reservation
+mds_session_cache_liveness_magnitude
+mds_recall_warning_threshold

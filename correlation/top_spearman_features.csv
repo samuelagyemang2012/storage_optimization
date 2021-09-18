@@ -1,0 +1,13 @@
+features,Spearman Correllation
+Target,1.0
+mds_recall_max_caps,0.24115504844987826
+mds_dir_max_commit_size,0.22326408823470897
+mds_cache_reservation,0.2035208303426257
+osd_tier_default_cache_hit_set_count,0.18364147623750898
+mds_session_cache_liveness_magnitude,0.17046621726358482
+mds_recall_warning_threshold,0.1470645652030409
+client_oc_max_dirty,0.14684515582295893
+bluestore_fsck_read_bytes_cap,0.13834284623130091
+rbd_readahead_max_bytes,0.12972352313146673
+osd_target_transaction_size,0.12184387464261534
+mds_min_caps_per_client,0.11062588387168484

@@ -1,0 +1,14 @@
+features,Pearson Correllation
+Target,1.0
+mds_recall_max_caps,0.2398605061759345
+mds_cache_reservation,0.22298702240964813
+mds_dir_max_commit_size,0.2047532007026298
+osd_tier_default_cache_hit_set_count,0.18834731347399586
+mds_session_cache_liveness_magnitude,0.1863531665052677
+mds_recall_warning_threshold,0.1692501144157178
+osd_target_transaction_size,0.15747257142769447
+client_oc_max_dirty,0.14699099365330742
+rbd_readahead_max_bytes,0.1264382421740574
+mds_min_caps_per_client,0.12004615972818544
+bluestore_fsck_read_bytes_cap,0.11916130718650805
+mds_client_prealloc_inos,0.10795925074705329
