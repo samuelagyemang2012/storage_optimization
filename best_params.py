@@ -31,5 +31,10 @@ def get_parameters(model_name, df_):
     return data
 
 
-best_ = get_parameters("svr", final_df)
-print(best_)
+for m in models:
+    best_ = get_parameters(m, final_df)
+    f = open("results/best_params/" + m + ".txt", "w")
+    f.write(best_)
+    f.close()
+
+print("done")

@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.neural_network import MLPRegressor
 from xgboost import XGBRegressor
-from sklearn.metrics import mean_squared_error, make_scorer
+from sklearn.metrics import mean_squared_error
 import seaborn as sns
 import pickle
 
@@ -267,6 +267,6 @@ rmses = [["SVR", svr_rmse],
          ["RR", rr_rmse],
          ["MLP", mlp_rmse],
          ["XGB", xgb_rmse],
-         ["GB", gb_rmse]
-         ]
-df_rmses = pd.DataFrame(rmses, columns=["model", "score"]).to_csv("models/rmses.csv", index=None)
+         ["GB", gb_rmse]]
+df_rmses = pd.DataFrame(rmses, columns=["model", "score"])
+df_rmses.to_csv("models/rmses.csv", index=None)

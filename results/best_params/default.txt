@@ -1,0 +1,11 @@
+mds_recall_warning_threshold=32768
+mds_dir_max_commit_size=10
+mds_recall_max_caps=5000
+mds_session_cache_liveness_magnitude=
+bluestore_fsck_read_bytes_cap=67108864
+osd_tier_default_cache_hit_set_count=4
+osd_target_transaction_size=30
+mds_min_caps_per_client=100
+rbd_readahead_max_bytes=524288
+client_oc_max_dirty=104857600
+mds_cache_reservation=0.05
