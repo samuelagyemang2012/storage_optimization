@@ -269,9 +269,8 @@ def bayesian_opt(obj_fun, num_trials):
     trial = study.best_trial
     # print('result: {}'.format(trial.value))
     # print("Best hyperparameters: {}".format(trial.params))
-
-    return trial
     # optuna.visualization.plot_optimization_history(study).show()
+    return trial
 
 
 def save_optimization_results(data, path):
