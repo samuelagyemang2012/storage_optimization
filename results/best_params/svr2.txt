@@ -1,0 +1,4 @@
+osd_tier_default_cache_min_write_recency_for_promote=1
+osd_bench_max_block_size=67117563
+ms_async_op_threads=9
+osd_tier_default_cache_hit_set_search_last_n=2
