@@ -13,7 +13,7 @@ import seaborn as sns
 import pickle
 
 # Load data
-path = "correlation/ps_joined_params_training.csv"
+path = "correlation/ps_joined_params_training2.csv"
 df = pd.read_csv(path)
 df.head()
 
@@ -35,8 +35,8 @@ sc_y = StandardScaler()
 X = sc_X.fit_transform(features_)
 y = sc_y.fit_transform(target_.reshape(-1, 1))
 
-pickle.dump(sc_X, open("scalers/X_scaler.sav", 'wb'))
-pickle.dump(sc_y, open("scalers/y_scaler.sav", 'wb'))
+pickle.dump(sc_X, open("scalers/X_scaler2.sav", 'wb'))
+pickle.dump(sc_y, open("scalers/y_scaler2.sav", 'wb'))
 
 print("Data scaled and scalers saved")
 
@@ -124,37 +124,37 @@ print("Training Done")
 # Evaluate Support Vector Regressor
 svr_preds = svr_grid.predict(X_test)
 svr_rmse = round(np.sqrt(mean_squared_error(y_test.reshape(-1, ), svr_preds)), 4)
-pickle.dump(svr_grid, open("models/svr/svr.sav", 'wb'))
+pickle.dump(svr_grid, open("models/svr/svr2.sav", 'wb'))
 print("SVR RMSE: ", svr_rmse)
 
 # Evaluate Linear Regression model
 lr_preds = lr.predict(X_test)
 lr_rmse = round(np.sqrt(mean_squared_error(y_test.reshape(-1, ), lr_preds)), 4)
-pickle.dump(lr, open("models/lr/lr.sav", 'wb'))
+pickle.dump(lr, open("models/lr/lr2.sav", 'wb'))
 print("LR RMSE: ", lr_rmse)
 
 # Evaluate Random Forest Regressor
 rr_preds = rr_grid.predict(X_test)
 rr_rmse = round(np.sqrt(mean_squared_error(y_test.reshape(-1, ), rr_preds)), 4)
-pickle.dump(rr_grid, open("models/rr/rr.sav", 'wb'))
+pickle.dump(rr_grid, open("models/rr/rr2.sav", 'wb'))
 print("RR RMSE: ", rr_rmse)
 
 # Evaluate MLP Regressor
 mlp_preds = mlp_grid.predict(X_test)
 mlp_rmse = round(np.sqrt(mean_squared_error(y_test.reshape(-1, ), mlp_preds)), 4)
-pickle.dump(mlp_grid, open("models/mlp/mlp.sav", 'wb'))
+pickle.dump(mlp_grid, open("models/mlp/mlp2.sav", 'wb'))
 print("MLP RMSE: ", mlp_rmse)
 
 # Evaluate XGB Regressor
 xgb_preds = xgb_grid.predict(X_test)
 xgb_rmse = round(np.sqrt(mean_squared_error(y_test.reshape(-1, ), xgb_preds)), 4)
-pickle.dump(xgb_grid, open("models/xgb/xgb.sav", 'wb'))
+pickle.dump(xgb_grid, open("models/xgb/xgb2.sav", 'wb'))
 print("XGB RMSE: ", xgb_rmse)
 
 # Evaluate GradientBoosting Regressor
 gb_preds = gb_grid.predict(X_test)
 gb_rmse = round(np.sqrt(mean_squared_error(y_test.reshape(-1, ), gb_preds)), 4)
-pickle.dump(gb_grid, open("models/gb/gb.sav", 'wb'))
+pickle.dump(gb_grid, open("models/gb/gb2.sav", 'wb'))
 print("GB RMSE: ", gb_rmse)
 
 print("Evaluation Done")
@@ -198,37 +198,37 @@ def display_info(df1, df2):
 
 
 # Train data
-train_svr_yfit = original_pred_plot(X_train, y_train, svr_grid, "SVR-Train Line of Fit", "models/svr/train.png")
+train_svr_yfit = original_pred_plot(X_train, y_train, svr_grid, "SVR-Train Line of Fit", "models/svr/train2.png")
 # Test data
-test_svr_yfit = original_pred_plot(X_test, y_test, svr_grid, "SVR-Test Line of Fit", "models/svr/test.png")
+test_svr_yfit = original_pred_plot(X_test, y_test, svr_grid, "SVR-Test Line of Fit", "models/svr/test2.png")
 
 # LR train and test plot (Original vs Predicted)
 # Train data
-train_lr_yfit = original_pred_plot(X_train, y_train, lr, "LR-Train Line of Fit", "models/lr/train.png")
+train_lr_yfit = original_pred_plot(X_train, y_train, lr, "LR-Train Line of Fit", "models/lr/train2.png")
 # Test data
-test_lr_yfit = original_pred_plot(X_test, y_test, lr, "LR-Test Line of Fit", "models/lr/test.png")
+test_lr_yfit = original_pred_plot(X_test, y_test, lr, "LR-Test Line of Fit", "models/lr/test2.png")
 
 # RR train and test plot (Original vs Predicted)
 # Train data
-train_rr_yfit = original_pred_plot(X_train, y_train, rr_grid, "RR-Train Line of Fit", "models/rr/train.png")
+train_rr_yfit = original_pred_plot(X_train, y_train, rr_grid, "RR-Train Line of Fit", "models/rr/train2.png")
 # Test data
-test_rr_yfit = original_pred_plot(X_test, y_test, rr_grid, "RR-Test Line of Fit", "models/rr/test.png")
+test_rr_yfit = original_pred_plot(X_test, y_test, rr_grid, "RR-Test Line of Fit", "models/rr/test2.png")
 
 # MLP train and test plot (Original vs Predicted)
 # Train data
-train_mlp_yfit = original_pred_plot(X_train, y_train, mlp_grid, "MLP-Train Line of Fit", "models/mlp/train.png")
+train_mlp_yfit = original_pred_plot(X_train, y_train, mlp_grid, "MLP-Train Line of Fit", "models/mlp/train2.png")
 # Test data
-test_mlp_yfit = original_pred_plot(X_test, y_test, mlp_grid, "MLP-Test Line of Fit", "models/mlp/test.png")
+test_mlp_yfit = original_pred_plot(X_test, y_test, mlp_grid, "MLP-Test Line of Fit", "models/mlp/test2.png")
 
 # XGB train and test plot (Original vs Predicted)
-train_xgb_yfit = original_pred_plot(X_train, y_train, xgb_grid, "XGB-Train Line of Fit", "models/xgb/train.png")
+train_xgb_yfit = original_pred_plot(X_train, y_train, xgb_grid, "XGB-Train Line of Fit", "models/xgb/train2.png")
 # Test data
-test_xgb_yfit = original_pred_plot(X_test, y_test, xgb_grid, "XGB-Test Line of Fit", "models/xgb/test.png")
+test_xgb_yfit = original_pred_plot(X_test, y_test, xgb_grid, "XGB-Test Line of Fit", "models/xgb/test2.png")
 
 # GB train and test plot (Original vs Predicted)
-train_gb_yfit = original_pred_plot(X_train, y_train, gb_grid, "GB-Train Line of Fit", "models/gb/train.png")
+train_gb_yfit = original_pred_plot(X_train, y_train, gb_grid, "GB-Train Line of Fit", "models/gb/train2.png")
 # Test data
-test_gb_yfit = original_pred_plot(X_test, y_test, gb_grid, "GB-Test Line of Fit", "models/gb/test.png")
+test_gb_yfit = original_pred_plot(X_test, y_test, gb_grid, "GB-Test Line of Fit", "models/gb/test2.png")
 
 print("Plots complete")
 # Plot all lines of Fit
@@ -257,7 +257,7 @@ plt.plot(sc_y.inverse_transform(gb_), color="blue", label="GB")
 
 plt.legend()
 
-f.savefig("models/lines_of_fit.png")
+f.savefig("models/lines_of_fit2.png")
 print("Lines of fit drawn")
 
 # Save RMSE
@@ -269,4 +269,4 @@ rmses = [["SVR", svr_rmse],
          ["XGB", xgb_rmse],
          ["GB", gb_rmse]
          ]
-df_rmses = pd.DataFrame(rmses, columns=["model", "score"]).to_csv("models/rmses.csv", index=None)
+df_rmses = pd.DataFrame(rmses, columns=["model", "score"]).to_csv("models/rmses2.csv", index=None)

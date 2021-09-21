@@ -12,17 +12,17 @@ mlp_results = []
 xgb_results = []
 gb_results = []
 
-model_paths = ["models/svr/svr.sav",
-               "models/lr/lr.sav",
-               "models/rr/rr.sav",
-               "models/mlp/mlp.sav",
-               "models/xgb/xgb.sav",
-               "models/gb/gb.sav"]
+model_paths = ["models/svr/svr2.sav",
+               "models/lr/lr2.sav",
+               "models/rr/rr2.sav",
+               "models/mlp/mlp2.sav",
+               "models/xgb/xgb2.sav",
+               "models/gb/gb2.sav"]
 
-scaler_paths = ["scalers/X_scaler.sav", "scalers/y_scaler.sav"]
+scaler_paths = ["scalers/X_scaler2.sav", "scalers/y_scaler2.sav"]
 
 ceph_param_path = "ceph_parameters.csv"
-data_path = "correlation/ps_joined_params_training.csv"
+data_path = "correlation/ps_joined_params_training2.csv"
 
 # Load Data
 params_df = pd.read_csv(ceph_param_path)
@@ -288,7 +288,7 @@ start = time.time()
 for i in range(loops_):
     svr_study = bayesian_opt(svr_objective, n_trials)
     svr_results.append([svr_study.value, svr_study.params])
-save_optimization_results(svr_results, "results/svr_results.csv")
+save_optimization_results(svr_results, "results/svr_results2.csv")
 end = time.time()
 print("Taken taken: ", round((end - start) / 60, 4))
 print("SVR Optimization done")
@@ -299,7 +299,7 @@ start = time.time()
 for i in range(loops_):
     lr_study = bayesian_opt(lr_objective, n_trials)
     lr_results.append([lr_study.value, lr_study.params])
-save_optimization_results(lr_results, "results/lr_results.csv")
+save_optimization_results(lr_results, "results/lr_results2.csv")
 end = time.time()
 print("Taken taken: ", round((end - start) / 60, 4))
 print("LR Optimization done")
@@ -310,7 +310,7 @@ start = time.time()
 for i in range(loops_):
     rr_study = bayesian_opt(rr_objective, n_trials)
     rr_results.append([rr_study.value, rr_study.params])
-save_optimization_results(rr_results, "results/rr_results.csv")
+save_optimization_results(rr_results, "results/rr_results2.csv")
 end = time.time()
 print("Taken taken: ", round((end - start) / 60, 4))
 print("RR Optimization done")
@@ -321,7 +321,7 @@ start = time.time()
 for i in range(loops_):
     mlp_study = bayesian_opt(mlp_objective, n_trials)
     mlp_results.append([mlp_study.value, mlp_study.params])
-save_optimization_results(mlp_results, "results/mlp_results.csv")
+save_optimization_results(mlp_results, "results/mlp_results2.csv")
 end = time.time()
 print("Taken taken: ", round((end - start) / 60, 4))
 print("MLP Optimization done")
@@ -332,7 +332,7 @@ start = time.time()
 for i in range(loops_):
     xgb_study = bayesian_opt(xgb_objective, n_trials)
     xgb_results.append([xgb_study.value, xgb_study.params])
-save_optimization_results(xgb_results, "results/xgb_results.csv")
+save_optimization_results(xgb_results, "results/xgb_results2.csv")
 end = time.time()
 print("Taken taken: ", round((end - start) / 60, 4))
 print("XGB Optimization done")
@@ -343,7 +343,7 @@ start = time.time()
 for i in range(loops_):
     gb_study = bayesian_opt(gb_objective, n_trials)
     gb_results.append([gb_study.value, gb_study.params])
-save_optimization_results(gb_results, "results/gb_results.csv")
+save_optimization_results(gb_results, "results/gb_results2.csv")
 end = time.time()
 print("Taken taken: ", round((end - start) / 60, 4))
 print("GB Optimization done")

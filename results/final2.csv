@@ -1,0 +1,7 @@
+,model,best_score,parameters
+0,svr,412.0,"{'osd_tier_default_cache_min_write_recency_for_promote': 1, 'osd_bench_max_block_size': 67117563, 'ms_async_op_threads': 9, 'osd_tier_default_cache_hit_set_search_last_n': 2}"
+1,lr,6651.0,"{'osd_tier_default_cache_min_write_recency_for_promote': 5, 'osd_bench_max_block_size': 79999979, 'ms_async_op_threads': 24, 'osd_tier_default_cache_hit_set_search_last_n': 5}"
+2,rr,393.0,"{'osd_tier_default_cache_min_write_recency_for_promote': 2, 'osd_bench_max_block_size': 72549131, 'ms_async_op_threads': 15, 'osd_tier_default_cache_hit_set_search_last_n': 3}"
+3,mlp,4640.0,"{'osd_tier_default_cache_min_write_recency_for_promote': 2, 'osd_bench_max_block_size': 79999342, 'ms_async_op_threads': 24, 'osd_tier_default_cache_hit_set_search_last_n': 5}"
+4,xgb,395.0,"{'osd_tier_default_cache_min_write_recency_for_promote': 4, 'osd_bench_max_block_size': 67140293, 'ms_async_op_threads': 12, 'osd_tier_default_cache_hit_set_search_last_n': 4}"
+5,gb,404.0,"{'osd_tier_default_cache_min_write_recency_for_promote': 3, 'osd_bench_max_block_size': 67140166, 'ms_async_op_threads': 24, 'osd_tier_default_cache_hit_set_search_last_n': 1}"

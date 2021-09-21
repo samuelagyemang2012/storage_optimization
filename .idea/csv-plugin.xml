@@ -10,13 +10,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\correlation\anova_results_average latency(s).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\correlation\high_corr_params.csv">
           <value>
             <Attribute>
@@ -24,7 +17,7 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\correlation\intersection.csv">
+        <entry key="\correlation\high_corr_params2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -46,6 +39,13 @@
           </value>
         </entry>
         <entry key="\correlation\kendall_features.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\correlation\kendall_features2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -87,7 +87,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\correlation\spearman_features2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\correlation\top_kendall_features.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\correlation\top_kendall_features2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -101,6 +115,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\correlation\top_pearson_features2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\correlation\top_spearman_features2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\models\rmses.csv">
           <value>
             <Attribute>
@@ -108,14 +136,21 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\rados_bench_results\params_average iops.csv">
+        <entry key="\models\rmses2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\rados_bench_results\params_average latency(s).csv">
+        <entry key="\rados_bench_results\params_average iops2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\rados_bench_results\params_average_iops.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -129,7 +164,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\results\final2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\results\gb_results.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\results\gb_results2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

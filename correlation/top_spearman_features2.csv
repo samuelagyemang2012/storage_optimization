@@ -1,0 +1,10 @@
+features,Spearman Correllation
+Target,1.0
+ms_async_op_threads,0.23542431850715484
+osd_bench_max_block_size,0.21420128114031126
+osd_tier_default_cache_hit_set_search_last_n,0.13973877489381534
+bluestore_fsck_read_bytes_cap,0.13635241209547774
+client_oc_target_dirty,0.11367670854221236
+osd_tier_default_cache_min_write_recency_for_promote,0.1012854743350755
+mds_thrash_exports,0.09958414694833859
+mds_log_max_events,0.09009719010070322

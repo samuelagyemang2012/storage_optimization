@@ -1,0 +1,10 @@
+features,Kendall Correllation
+Target,1.0
+ms_async_op_threads,0.16396311425701732
+osd_bench_max_block_size,0.14735476628292932
+osd_tier_default_cache_hit_set_search_last_n,0.1120607282462859
+bluestore_fsck_read_bytes_cap,0.09207328103213853
+osd_tier_default_cache_min_write_recency_for_promote,0.08280364064045409
+mds_thrash_exports,0.07980808616022089
+client_oc_target_dirty,0.07543294378571894
+mds_log_max_events,0.07097650182638639

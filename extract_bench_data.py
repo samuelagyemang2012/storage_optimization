@@ -4,13 +4,13 @@ import pandas as pd
 """
 Reads parameter values and bash_script_results generated from rados bench and saves it to a csv file
 """
-gen_path = "rados_bench_results/gen.txt"
-res_path = "rados_bench_results/rados_results.txt"
+gen_path = "rados_bench_results/gen2.txt"
+res_path = "rados_bench_results/rados_results2.txt"
 ceph_path = "ceph_parameters.csv"
 
 NUM_PARAMS = 128
-TARGET = "Average Latency(s)"  # "Average Latency(s)"  # Average IOPS
-OUTPUT = "rados_bench_results/params_" + TARGET.lower() + ".csv"
+TARGET = "Average IOPS"  # "Average Latency(s)"  # Average IOPS
+OUTPUT = "rados_bench_results/params_" + TARGET.lower() + "2.csv"
 
 gen = open(gen_path)
 res = open(res_path)

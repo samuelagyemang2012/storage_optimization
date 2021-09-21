@@ -1,10 +1,10 @@
 import pandas as pd
 import json
 
-paths = ["results/svr_results.csv", "results/lr_results.csv", "results/rr_results.csv", "results/mlp_results.csv",
-         "results/xgb_results.csv", "results/gb_results.csv"]
+paths = ["results/svr_results2.csv", "results/lr_results2.csv", "results/rr_results2.csv", "results/mlp_results2.csv",
+         "results/xgb_results2.csv", "results/gb_results2.csv"]
 models = ["svr", "lr", "rr", "mlp", "xgb", "gb"]
-data_path = "correlation/ps_joined_params_training.csv"
+data_path = "correlation/ps_joined_params_training2.csv"
 results = []
 
 data_df = pd.read_csv(data_path)
@@ -18,8 +18,8 @@ for i, p in enumerate(paths):
     results.append([models[i], max_iops, best_df["parameters"].item()])
 
 fields = ["model", "best_score", "parameters"]
-final_df = pd.DataFrame(results, columns=fields, index=None, )
-final_df.to_csv('results/final.csv')
+final_df = pd.DataFrame(results, columns=fields, index=None)
+final_df.to_csv('results/final2.csv')
 
 
 def get_parameters(model_name, df_):

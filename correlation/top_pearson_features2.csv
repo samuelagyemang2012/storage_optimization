@@ -1,0 +1,9 @@
+features,Pearson Correllation
+Target,1.0
+ms_async_op_threads,0.4147384631749388
+osd_bench_max_block_size,0.24219535670271708
+osd_tier_default_cache_hit_set_search_last_n,0.15950892956143586
+osd_tier_default_cache_min_write_recency_for_promote,0.12715047666858326
+mds_recall_max_decay_threshold,0.12707275825472286
+bluestore_deferred_batch_ops,0.12492609460580259
+client_readahead_max_bytes,0.11906715214602921

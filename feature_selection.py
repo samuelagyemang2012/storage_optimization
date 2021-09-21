@@ -6,7 +6,7 @@ import seaborn as sns
 import csv
 
 path1 = "ceph_parameters.csv"
-path2 = "rados_bench_results/params_average_iops.csv"
+path2 = "rados_bench_results/params_average iops2.csv"
 
 # For Ceph
 df_iops = pd.read_csv(path2)
@@ -43,7 +43,7 @@ def correlation_features_test(features, method):
     plt.figure(figsize=(10, 10))
     g = sns.heatmap(features[top_K].corr(method=method), annot=True, cmap="RdYlGn")
     figure = g.get_figure()
-    figure.savefig("graphs/" + method + ".png")
+    figure.savefig("graphs/" + method + "2.png")
 
 
 def get_highly_corr_cols(dataset, threshold):
@@ -80,9 +80,9 @@ def get_feature_intersection(top_p, top_k, top_s, all_data):
     # s1 = pset.intersection(kset)
     s2 = list(pset.intersection(sset))
 
-    pd.DataFrame(s2, index=None, columns=['features']).to_csv("correlation/ps_joined_params.csv", index=False)
+    pd.DataFrame(s2, index=None, columns=['features']).to_csv("correlation/ps_joined_params2.csv", index=False)
     s2.insert(0, "Target")
-    all_data[s2].to_csv("correlation/ps_joined_params_training.csv", index=False)
+    all_data[s2].to_csv("correlation/ps_joined_params_training2.csv", index=False)
 
 
 # Select categorical features
@@ -106,7 +106,7 @@ f.set_figwidth(12)
 f.set_figheight(5)
 plt.scatter([i for i in range(1, len(target.tolist()) + 1)], target)
 plt.ylabel('Average IOPS')
-plt.savefig('graphs/scatter_iops.png')
+plt.savefig('graphs/scatter_iops2.png')
 
 # Average IOPS line plot
 sns.set_style("darkgrid")
@@ -115,7 +115,7 @@ f.set_figwidth(12)
 f.set_figheight(5)
 plt.plot(target, )
 plt.ylabel('Average IOPS')
-plt.savefig('graphs/line_iops.png')
+plt.savefig('graphs/line_iops2.png')
 
 print("Target scatter and line graphs saved")
 
@@ -126,7 +126,7 @@ n_features = n_features.to_frame(name="variance").reset_index()
 n_features = n_features.rename(columns={'index': 'features'})
 n_features = n_features[n_features["variance"] <= delta]
 print(len(n_features))
-n_features.to_csv("correlation/low_variance_params.csv")
+n_features.to_csv("correlation/low_variance_params2.csv")
 
 # Remove features with low variance from main df
 numerical_features = numerical_features.drop(n_features["features"].tolist(), axis=1)
@@ -137,7 +137,7 @@ print("Low variance features removed")
 h_corr = get_highly_corr_cols(numerical_features, 0.85)
 h_corr = list(h_corr)
 print(len(h_corr))
-list_to_csv(['features'], h_corr, "correlation/high_corr_params.csv")
+list_to_csv(['features'], h_corr, "correlation/high_corr_params2.csv")
 
 print("Highly correlated features removed")
 
@@ -154,12 +154,12 @@ pcd = p_corr_data["Target"].to_frame(name="Pearson Correllation").reset_index()
 pcd = pcd.rename(columns={'index': 'features'})
 pcd = pcd.sort_values(by=['Pearson Correllation'], ascending=False)
 # Top 13 features
-top_p = pcd.head(13)
+top_p = pcd.head(8)
 correlation_features_test(numerical_features[top_p["features"]], "pearson")
 # Save data
 p_data = new_features[top_p["features"]]
-p_data.to_csv("correlation/pearson_features.csv", index=None)
-top_p.to_csv("correlation/top_pearson_features.csv", index=None)
+p_data.to_csv("correlation/pearson_features2.csv", index=None)
+top_p.to_csv("correlation/top_pearson_features2.csv", index=None)
 print("Pearson correlation done")
 
 # Kendall Correlation Test
@@ -172,8 +172,8 @@ top_k = kcd.head(9)
 correlation_features_test(numerical_features[top_k["features"]], "kendall")
 # Save data
 k_data = new_features[top_k["features"]]
-k_data.to_csv("correlation/kendall_features.csv", index=None)
-top_k.to_csv("correlation/top_kendall_features.csv", index=None)
+k_data.to_csv("correlation/kendall_features2.csv", index=None)
+top_k.to_csv("correlation/top_kendall_features2.csv", index=None)
 print("Kendall correlation done")
 
 # Spearman Correlation Test
@@ -182,12 +182,12 @@ scd = s_corr_data["Target"].to_frame(name="Spearman Correllation").reset_index()
 scd = scd.rename(columns={'index': 'features'})
 scd = scd.sort_values(by=['Spearman Correllation'], ascending=False)
 # Top 12 features
-top_s = scd.head(12)
+top_s = scd.head(9)
 correlation_features_test(numerical_features[top_s["features"]], "spearman")
 # Save data
 s_data = new_features[top_s["features"]]
-s_data.to_csv("correlation/spearman_features.csv", index=None)
-top_s.to_csv("correlation/top_spearman_features.csv", index=None)
+s_data.to_csv("correlation/spearman_features2.csv", index=None)
+top_s.to_csv("correlation/top_spearman_features2.csv", index=None)
 print("Spearman correlation done")
 
 get_feature_intersection(top_p, top_k, top_s, numerical_features)
