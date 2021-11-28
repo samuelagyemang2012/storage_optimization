@@ -12,3 +12,16 @@
 # Best hyperparameters: {'mds_recall_max_caps': 6282, 'mds_cache_reservation': 0.6867291767750818, 'mds_dir_max_commit_size': 29, 'osd_tier_default_cache_hit_set_count': 8, 'mds_session_cache_liveness_magnitude': 20, 'mds_recall_warning_threshold': 49870, 'osd_target_transaction_size': 44, 'client_oc_max_dirty': 104857600, 'rbd_readahead_max_bytes': 536969, 'mds_min_caps_per_client': 478, 'bluestore_fsck_read_bytes_cap': 87104510, 'mds_client_prealloc_inos': 2915}
 # lr
 # Best hyperparameters: {'mds_recall_max_caps': 6840, 'mds_cache_reservation': 0.06957215044764824, 'mds_dir_max_commit_size': 29, 'osd_tier_default_cache_hit_set_count': 7, 'mds_session_cache_liveness_magnitude': 20, 'mds_recall_warning_threshold': 60288, 'osd_target_transaction_size': 50, 'client_oc_max_dirty': 104857600, 'rbd_readahead_max_bytes': 524527, 'mds_min_caps_per_client': 487, 'bluestore_fsck_read_bytes_cap': 87106722, 'mds_client_prealloc_inos': 2938}
+
+
+
+8:00-8:50
+9:00-9:50
+10:10-11:00
+11:10-12:00
+14:00-14:50
+15:00-15:50
+16:10-17:00
+17:10-18:00
+19:00-19:50
+20:00-20:50

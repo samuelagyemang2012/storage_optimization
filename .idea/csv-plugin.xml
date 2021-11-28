@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\correlation\low_variance_params2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\correlation\pearson_features.csv">
           <value>
             <Attribute>
@@ -66,7 +73,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\correlation\pearson_features2.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\correlation\ps_joined_params.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\correlation\ps_joined_params2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
@@ -193,6 +214,13 @@
           </value>
         </entry>
         <entry key="\results\mlp_results.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\results\mlp_results2.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
