@@ -282,7 +282,7 @@ n_trials = 500
 loops_ = 30
 
 # Bayesian Optimization
-# SVR
+# SVR model
 start = time.time()
 for i in range(loops_):
     svr_study = bayesian_opt(svr_objective, n_trials)
@@ -293,7 +293,7 @@ print("Taken taken: ", round((end - start) / 60, 4))
 print("SVR Optimization done")
 print("")
 
-# LR
+# LR model
 start = time.time()
 for i in range(loops_):
     lr_study = bayesian_opt(lr_objective, n_trials)
@@ -304,7 +304,7 @@ print("Taken taken: ", round((end - start) / 60, 4))
 print("LR Optimization done")
 print("")
 
-# RR
+# RR model
 start = time.time()
 for i in range(loops_):
     rr_study = bayesian_opt(rr_objective, n_trials)
@@ -315,7 +315,7 @@ print("Taken taken: ", round((end - start) / 60, 4))
 print("RR Optimization done")
 print("")
 
-# MLP
+# MLP model
 start = time.time()
 for i in range(loops_):
     mlp_study = bayesian_opt(mlp_objective, n_trials)
@@ -326,7 +326,7 @@ print("Taken taken: ", round((end - start) / 60, 4))
 print("MLP Optimization done")
 print("")
 
-# XGB
+# XGB model
 start = time.time()
 for i in range(loops_):
     xgb_study = bayesian_opt(xgb_objective, n_trials)
@@ -337,7 +337,7 @@ print("Taken taken: ", round((end - start) / 60, 4))
 print("XGB Optimization done")
 print("")
 
-# GB
+# GB model
 start = time.time()
 for i in range(loops_):
     gb_study = bayesian_opt(gb_objective, n_trials)
