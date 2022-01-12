@@ -1,0 +1,4 @@
+,Feature Type,R2 Score,Accuracy
+0,All features,0.634,90.18%
+1,Pearson features,0.44,83.86%
+2,Spearman features,0.62,88.77%

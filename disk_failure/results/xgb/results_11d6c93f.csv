@@ -1,0 +1,4 @@
+,Feature Type,Eval AUC,Eval Prec,Eval Rec
+0,All features,0.6027,0.43,84.03
+1,Pearson features,0.6653,3.6999999999999997,36.13
+2,Spearman features,0.7246,1.2,61.339999999999996
