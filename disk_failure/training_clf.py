@@ -1,3 +1,5 @@
+import pickle
+
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV, RepeatedKFold
@@ -10,7 +12,9 @@ from xgboost import XGBClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
+from collections import Counter
 import uuid
+import shap
 
 
 # functions
@@ -73,6 +77,19 @@ def plot_ROC(y, preds, title, path):
     plt.savefig(path)
 
 
+def my_counter(data):
+    fail = 0
+    working = 0
+    for d in data:
+        val = d.item()
+        if val == 0:
+            working += 1
+        else:
+            fail += 1
+
+    return 'fail: ' + str(fail) + " working: " + str(working)
+
+
 # Load data
 print('load data')
 train_path = "D:/Datasets/blackbase/prepared_data/MQ01ABF050_train_prepared.csv"
@@ -102,13 +119,13 @@ eval_target = test_df.iloc[:, 5:6]
 # do sampling
 ################################################################################
 print('do sampling')
-# all_features, atarget = do_sampling(all_features, target, 0.1, 0.5)
-# pearson_features, ptarget = do_sampling(pearson_features, target, 0.1, 0.5)
-# spearman_features, starget = do_sampling(spearman_features, target, 0.1, 0.5)
+all_features, atarget = do_sampling(all_features, target, 0.1, 0.5)
+pearson_features, ptarget = do_sampling(pearson_features, target, 0.1, 0.5)
+spearman_features, starget = do_sampling(spearman_features, target, 0.1, 0.5)
 
-all_features, atarget = smote(all_features, target, 0.1, 0.5)
-pearson_features, ptarget = smote(pearson_features, target, 0.1, 0.5)
-spearman_features, starget = smote(spearman_features, target, 0.1, 0.5)
+# all_features, atarget = smote(all_features, target, 0.1, 0.5)
+# pearson_features, ptarget = smote(pearson_features, target, 0.1, 0.5)
+# spearman_features, starget = smote(spearman_features, target, 0.1, 0.5)
 ###############################################################################
 
 # Convert features to numpy arrays
@@ -150,6 +167,10 @@ X_train, X_test, y_train, y_test = train_test_split(all_features_, atarget_, tes
 pX_train, pX_test, py_train, py_test = train_test_split(pearson_features_, ptarget_, test_size=0.2, random_state=12)
 sX_train, sX_test, sy_train, sy_test = train_test_split(spearman_features_, starget_, test_size=0.2, random_state=12)
 
+print('all: ' + my_counter(y_train))
+print('p: ' + my_counter(py_train))
+print('s: ' + my_counter(sy_train))
+
 # Grid Search
 print('setup up model')
 cv = RepeatedKFold(n_splits=10, n_repeats=3, random_state=1)
@@ -173,9 +194,9 @@ tree_param_grid = {
     "max_depth": [3, 5, 7],
     "max_leaf_nodes": [5, 8, 10]
 }
-# tree_grid = GridSearchCV(DecisionTreeClassifier(), tree_param_grid, verbose=0, n_jobs=-1, cv=cv)
-# p_tree_grid = GridSearchCV(DecisionTreeClassifier(), tree_param_grid, verbose=0, n_jobs=-1, cv=cv)
-# s_tree_grid = GridSearchCV(DecisionTreeClassifier(), tree_param_grid, verbose=0, n_jobs=-1, cv=cv)
+tree_grid = GridSearchCV(DecisionTreeClassifier(), tree_param_grid, verbose=0, n_jobs=-1, cv=cv)
+p_tree_grid = GridSearchCV(DecisionTreeClassifier(), tree_param_grid, verbose=0, n_jobs=-1, cv=cv)
+s_tree_grid = GridSearchCV(DecisionTreeClassifier(), tree_param_grid, verbose=0, n_jobs=-1, cv=cv)
 
 # Random Forest
 rf_param_grid = {
@@ -183,9 +204,9 @@ rf_param_grid = {
     # "criterion": ['squared_error'],
     "max_depth": [5]  # , 7, 10]
 }
-# rf_grid = GridSearchCV(RandomForestClassifier(), rf_param_grid, verbose=0, n_jobs=-1, cv=cv)
-# p_rf_grid = GridSearchCV(RandomForestClassifier(), rf_param_grid, verbose=0, n_jobs=-1, cv=cv)
-# s_rf_grid = GridSearchCV(RandomForestClassifier(), rf_param_grid, verbose=0, n_jobs=-1, cv=cv)
+rf_grid = GridSearchCV(RandomForestClassifier(), rf_param_grid, verbose=0, n_jobs=-1, cv=cv)
+p_rf_grid = GridSearchCV(RandomForestClassifier(), rf_param_grid, verbose=0, n_jobs=-1, cv=cv)
+s_rf_grid = GridSearchCV(RandomForestClassifier(), rf_param_grid, verbose=0, n_jobs=-1, cv=cv)
 
 # Fit XGB Clf
 print('xgb train model')
@@ -193,46 +214,79 @@ xgb_clf_model = xgb_grid.fit(X_train, y_train)
 p_xgb_clf_model = p_xgb_grid.fit(pX_train, py_train)
 s_xgb_clf_model = s_xgb_grid.fit(sX_train, sy_train)
 
+# Save models and data for SHAP
+pickle.dump(xgb_clf_model, open("../disk_failure/models/xgb/xgb_a.sav", 'wb'))
+pickle.dump(p_xgb_clf_model, open("../disk_failure/models/xgb/xgb_p.sav", 'wb'))
+pickle.dump(s_xgb_clf_model, open("../disk_failure/models/xgb/xgb_s.sav", 'wb'))
+np.savetxt("../disk_failure/models/data/train/xgb/xgb_a.csv", X_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/train/xgb/xgb_p.csv", pX_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/train/xgb/xgb_s.csv", sX_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/xgb/xgb_a_test.csv", X_test, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/xgb/xgb_p_test.csv", pX_test, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/xgb/xgb_s_test.csv", sX_test, delimiter=",")
+
 # Fit D-Tree Clf
 print('decision tree train model')
-# tree_clf_model = tree_grid.fit(X_train, y_train)
-# p_tree_clf_model = p_tree_grid.fit(pX_train, py_train)
-# s_tree_clf_model = s_tree_grid.fit(sX_train, sy_train)
+tree_clf_model = tree_grid.fit(X_train, y_train)
+p_tree_clf_model = p_tree_grid.fit(pX_train, py_train)
+s_tree_clf_model = s_tree_grid.fit(sX_train, sy_train)
+
+# Save models and data for SHAP
+pickle.dump(tree_clf_model, open("../disk_failure/models/tree/tree_a.sav", 'wb'))
+pickle.dump(p_tree_clf_model, open("../disk_failure/models/tree/tree_p.sav", 'wb'))
+pickle.dump(s_tree_clf_model, open("../disk_failure/models/tree/tree_s.sav", 'wb'))
+np.savetxt("../disk_failure/models/data/train/tree/tree_a.csv", X_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/train/tree/tree_p.csv", pX_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/train/tree/tree_s.csv", sX_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/tree/tree_a_test.csv", X_test, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/tree/tree_p_test.csv", pX_test, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/tree/tree_s_test.csv", sX_test, delimiter=",")
 
 # Fit RF Clf
 print('random forest train model')
-# rf_clf_model = rf_grid.fit(X_train, y_train)
-# p_rf_clf_model = p_rf_grid.fit(pX_train, py_train)
-# s_rf_clf_model = s_rf_grid.fit(sX_train, sy_train)
+rf_clf_model = rf_grid.fit(X_train, y_train)
+p_rf_clf_model = p_rf_grid.fit(pX_train, py_train)
+s_rf_clf_model = s_rf_grid.fit(sX_train, sy_train)
+
+# Save models and data for SHAP
+pickle.dump(tree_clf_model, open("../disk_failure/models/rf/rf_a.sav", 'wb'))
+pickle.dump(p_tree_clf_model, open("../disk_failure/models/rf/rf_p.sav", 'wb'))
+pickle.dump(s_tree_clf_model, open("../disk_failure/models/rf/rf_s.sav", 'wb'))
+np.savetxt("../disk_failure/models/data/train/rf/rf_a.csv", X_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/train/rf/rf_p.csv", pX_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/train/rf/rf_s.csv", sX_train, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/rf/rf_a_test.csv", X_test, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/rf/rf_p_test.csv", pX_test, delimiter=",")
+np.savetxt("../disk_failure/models/data/test/rf/rf_s_test.csv", sX_test, delimiter=",")
 
 # Evaluate XGB Classifier
-print('evaluation')
-
-train_auc, train_prec, train_rec = eval_clf(X_test, y_test, xgb_clf_model)
-eval_auc, eval_prec, eval_rec = eval_clf(eX, ey, xgb_clf_model)
-
-p_train_auc, p_train_prec, p_train_rec = eval_clf(pX_test, py_test, p_xgb_clf_model)
-p_eval_auc, p_eval_prec, p_eval_rec = eval_clf(p_eX, ey, p_xgb_clf_model)
-
-s_train_auc, s_train_prec, s_train_rec = eval_clf(sX_test, sy_test, s_xgb_clf_model)
-s_eval_auc, s_eval_prec, s_eval_rec = eval_clf(s_eX, ey, s_xgb_clf_model)
-
-results = [['All features', eval_auc, eval_prec, eval_rec],
-           ['Pearson features', p_eval_auc, p_eval_prec, p_eval_rec],
-           ['Spearman features', s_eval_auc, s_eval_prec, s_eval_rec]]
-
-results_df = pd.DataFrame(results, columns=['Feature Type', 'Eval AUC', 'Eval Prec', 'Eval Acc'])
-id = uuid.uuid4()
-id = str(id)[:8]
-results_df.to_csv('../disk_failure/results/rf/results_' + id + ".csv")
-print(results_df)
-
-print('save roc curve')
-preds = xgb_clf_model.predict(eX)
-plot_ROC(ey, preds, 'ROC - XGB all', "../disk_failure/graphs/rf/all_roc_" + id + ".png")
-
-p_preds = p_xgb_clf_model.predict(p_eX)
-plot_ROC(ey, p_preds, 'ROC - XGB pearson', "../disk_failure/graphs/rf/pearson_roc_" + id + ".png")
-
-s_preds = s_xgb_clf_model.predict(s_eX)
-plot_ROC(ey, s_preds, 'ROC - XGB spearman', "../disk_failure/graphs/rf/spearman_roc_" + id + ".png")
+# print('evaluation')
+#
+# train_auc, train_prec, train_rec = eval_clf(X_test, y_test, tree_clf_model)
+# eval_auc, eval_prec, eval_rec = eval_clf(eX, ey, tree_clf_model)
+#
+# p_train_auc, p_train_prec, p_train_rec = eval_clf(pX_test, py_test, p_tree_clf_model)
+# p_eval_auc, p_eval_prec, p_eval_rec = eval_clf(p_eX, ey, p_tree_clf_model)
+#
+# s_train_auc, s_train_prec, s_train_rec = eval_clf(sX_test, sy_test, s_tree_clf_model)
+# s_eval_auc, s_eval_prec, s_eval_rec = eval_clf(s_eX, ey, s_tree_clf_model)
+#
+# results = [['All features', eval_auc, eval_prec, eval_rec],
+#            ['Pearson features', p_eval_auc, p_eval_prec, p_eval_rec],
+#            ['Spearman features', s_eval_auc, s_eval_prec, s_eval_rec]]
+#
+# results_df = pd.DataFrame(results, columns=['Feature Type', 'Eval AUC', 'Eval Prec', 'Eval Acc'])
+# id = uuid.uuid4()
+# id = str(id)[:8]
+# results_df.to_csv('../disk_failure/results/rf/results_' + id + ".csv")
+# print(results_df)
+#
+# print('save roc curve')
+# preds = tree_clf_model.predict(eX)
+# plot_ROC(ey, preds, 'ROC - XGB all', "../disk_failure/graphs/rf/all_roc_" + id + ".png")
+#
+# p_preds = p_tree_clf_model.predict(p_eX)
+# plot_ROC(ey, p_preds, 'ROC - XGB pearson', "../disk_failure/graphs/rf/pearson_roc_" + id + ".png")
+#
+# s_preds = s_tree_clf_model.predict(s_eX)
+# plot_ROC(ey, s_preds, 'ROC - XGB spearman', "../disk_failure/graphs/rf/spearman_roc_" + id + ".png")
